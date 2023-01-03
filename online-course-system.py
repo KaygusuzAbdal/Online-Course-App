@@ -244,11 +244,13 @@ def openAdminPage():
                 categoryList.append(i[0])
 
             combobox = customtkinter.CTkOptionMenu(coursepg, values=categoryList,
-                                                   command=lambda: getPageWidgets(combobox.get()))
+                                                   command=lambda x: getPageWidgets(combobox.get()))
             combobox.grid(row=0, column=0, padx=10, pady=20)
 
             if categoryName is None:
                 combobox.set(categoryList[0])
+            else:
+                combobox.set(categoryName)
             return categoryList, combobox
 
         # kategorideki kursları getir
