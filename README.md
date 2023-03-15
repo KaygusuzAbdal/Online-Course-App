@@ -1,4 +1,4 @@
-# Python-Desktop-App
+# Online Course Application
 Online Course Platform as desktop application (writed via python tkinter &amp; MySQL connected)
 
 
